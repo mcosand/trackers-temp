@@ -1,16 +1,15 @@
 ﻿using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("log-to-gpx")]
+[assembly: AssemblyTitle("TrackerConsole")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("log-to-gpx")]
-[assembly: AssemblyCopyright("Copyright © 2017 Matthew Cosand")]
+[assembly: AssemblyProduct("TrackerConsole")]
+[assembly: AssemblyCopyright("Copyright © 2018 Matthew Cosand")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +19,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("151d6387-955a-4377-914d-ea1e207cf0ee")]
+[assembly: Guid("2f4a76f7-ceee-4dbe-8cbe-b51117c98f87")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -32,5 +31,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("2017.8.8.1")]
-[assembly: AssemblyFileVersion("2017.8.8.1")]
+[assembly: AssemblyVersion("2018.2.3.1")]
+[assembly: AssemblyFileVersion("2018.2.3.1")]
