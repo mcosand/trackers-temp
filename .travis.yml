@@ -1,0 +1,14 @@
+language: csharp
+script:
+- nuget restore garmin-trackers.sln
+- msbuild /p:Configuration=Debug garmin-trackers.sln
+- pushd bin
+- zip -r TrackerConsole.zip TrackerConsole
+- pwd
+- ls
+- popd
+deploy:
+  provider: releases
+  api_key:
+    secure: vk1Qoolfq+moGpRl1peGAr7N0/TWyUlL9PvBZpNzvyaXoK3wfzTqh038btzMrnyXqvKFzQwXvgCcYiW7B8yRNLo0h6MD2oS0i6Oqngi4UUDzDIW8xlubE+fAQi+ndylXJ1nNHQcGWiABNwAW1Bi4s8XXC95Z+heM0PdHDOU9CgrTa89imez2x+SgJfCL/zHU5TQY4sIYdIsqeaeyGc9dUfcxXFkchBNdEGgnep0MpGLqpM72KMEIIzBO7Cjvqrs5mXsKx5WSnXzptALv8ZvHbYjLJOTEKopgFRZwp27xoS6buvuvWOKUw99NfyiXNGJ+IIVt9Prh1s3FShZM0wI4sQETalMwT7AL7fRyTp1A9+VsLg7d+aI7YMqeniGlhD3jKHWEO+eMRT+bqx13WG6WP9NhaO0QGBbb+wGeoilG6gf8ZEq5URUtvqHC1KYwAnNfEebx9wLIKfbzOO51JlBpVM5gjOnk4UlE1AkcomWB2ho4ARqYAsdKAFyfeBB1gI3QQfVwBLx+CKaeT/LYZfWD2OFXhQmuttHJPZCCU66Qz/VhFqJAFj3SKxSqyjTLaEWpSLpPkvRGpHEahCMjPo1lEvPEZNtXsU3q6Vu5tdsybPNfn9FRvUPa1kePoVkcTTohxO3PcMfrFNHCKi4uwNdrfqTVcjSRjnyGTOn0gKpbi5E=
+  file: bin/TrackerConsole.zip
